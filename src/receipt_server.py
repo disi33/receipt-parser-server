@@ -181,6 +181,12 @@ async def get_open_api_endpoint(
                         "receiptItems": receipt.items}
 
         json_compatible_item_data = jsonable_encoder(receipt_data)
+
+        if config.debug_print_results_as_json:
+            print("Result json is:")
+            print(json_compatible_item_data)
+            print()
+
         return JSONResponse(content=json_compatible_item_data)
 
     else:

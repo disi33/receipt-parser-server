@@ -8,4 +8,4 @@ mkdir -p data/tmp
 mkdir -p data/img
 mkdir -p data/out
 
-docker run --rm -t -i -p $IP:8721:8721 -v "$(pwd)/data:/app/data" -v "$(pwd):/config" -e RECEIPT_PARSER_CONFIG_DIR="/config" monolidth/receipt-parser
+docker run --rm -t -i -p $IP:8721:8721 -v "$(pwd)/data:/app/data" -v "$(pwd):/config" -e RECEIPT_PARSER_CONFIG_DIR="/config" disi33/receipt-parser

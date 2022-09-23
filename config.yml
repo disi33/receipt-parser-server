@@ -4,7 +4,7 @@ language: deu
 # Enable https
 https: false
 
-results_as_json: false
+debug_print_results_as_json: false
 
 # Where the receipts are stored
 # Receipts should be simple text files

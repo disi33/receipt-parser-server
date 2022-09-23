@@ -1,11 +1,11 @@
 Docker installation guide
 =================================================
-The receipt-parser-server image gets built automatically using the `Docker Hub <https://hub.docker.com/r/monolidth/receipt-parser>`_.
+The receipt-parser-server image gets built automatically using the `Docker Hub <https://hub.docker.com/r/disi33/receipt-parser>`_.
 The installation is very simple. First pull the image from Docker hub.
 
 .. code-block:: bash
 
-    docker pull monolidth/receipt-parser:latest
+    docker pull disi33/receipt-parser:latest
    
 
 Recommended
@@ -35,7 +35,7 @@ You could also run the Docker image without the launcher script e.g.
 
 .. code-block:: bash
 
-    docker run -i -t -p [YOUR-IP]:8721:8721  monolidth/receipt-parser
+    docker run -i -t -p [YOUR-IP]:8721:8721  disi33/receipt-parser
 
 
 

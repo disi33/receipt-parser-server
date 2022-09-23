@@ -11,13 +11,21 @@ serve:
 	bash util/generate_token.sh
 	python src/receipt_server.py
 
-PHONY: docker-build
+.PHONY: docker-build
 docker-build:
-	docker build -t monolidth/receipt-parser-server .
+	docker build -t disi33/receipt-parser-server .
+
+.PHONY: docker-build-test
+docker-build-test:
+	docker build -t disi33/receipt-parser-server-test .
 
 .PHONY: docker-push
 docker-push:
-	docker push monolidth/receipt-parser-server
+	docker push disi33/receipt-parser-server
+
+.PHONY: docker-push-test
+docker-push-test:
+	docker push disi33/receipt-parser-server-test
 
 .PHONY: docker-run
 docker-run:
